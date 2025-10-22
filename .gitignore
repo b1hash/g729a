@@ -1,0 +1,19 @@
+# Build outputs
+obj/
+lib/
+*.o
+*.lib
+*.exe
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+*.vcxproj.user
+
+# Test executables
+coder
+decoder
