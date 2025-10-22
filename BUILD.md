@@ -2,7 +2,33 @@
 
 ## Overview
 
-This project provides a simplified wrapper interface for the G.729A codec that can be built as a static library for Windows platforms.
+This project provides a simplified wrapper interface for the G.729A codec that can be built as a static library for Windows and other platforms.
+
+## Building with CMake (Recommended for Linux/macOS)
+
+### Prerequisites
+- CMake 3.10 or later
+- GCC or Clang compiler
+
+### Build Instructions
+
+```bash
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make
+```
+
+The library will be generated in `build/lib/libg729a.a`
+
+### Building Test Programs
+
+```bash
+cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON
+make
+```
+
+This will also build the `coder` and `decoder` test programs.
 
 ## Building with Visual Studio
 
